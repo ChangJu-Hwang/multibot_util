@@ -1,0 +1,7 @@
+{
+  "package_name": "multibot_util",
+  "non_idl_tuples": [
+    "/home/changju/multibot_ws/src/multibot_util:include/Instance.hpp",
+    "/home/changju/multibot_ws/src/multibot_util:include/MAPF_Util.hpp"
+  ]
+}

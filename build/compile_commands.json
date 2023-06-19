@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/changju/multibot_ws/src/multibot_util/build",
+  "command": "/usr/bin/c++  -DRCUTILS_ENABLE_FAULT_INJECTION -Dmultibot_util_EXPORTS -I/home/changju/multibot_ws/src/multibot_util/include -isystem /opt/ros/foxy/include  -g -fPIC   -Wall -Wextra -Wpedantic -std=gnu++2a -o CMakeFiles/multibot_util.dir/src/Instance.cpp.o -c /home/changju/multibot_ws/src/multibot_util/src/Instance.cpp",
+  "file": "/home/changju/multibot_ws/src/multibot_util/src/Instance.cpp"
+},
+{
+  "directory": "/home/changju/multibot_ws/src/multibot_util/build",
+  "command": "/usr/bin/c++  -DRCUTILS_ENABLE_FAULT_INJECTION -Dmultibot_util_EXPORTS -I/home/changju/multibot_ws/src/multibot_util/include -isystem /opt/ros/foxy/include  -g -fPIC   -Wall -Wextra -Wpedantic -std=gnu++2a -o CMakeFiles/multibot_util.dir/src/MAPF_Util.cpp.o -c /home/changju/multibot_ws/src/multibot_util/src/MAPF_Util.cpp",
+  "file": "/home/changju/multibot_ws/src/multibot_util/src/MAPF_Util.cpp"
+}
+]
