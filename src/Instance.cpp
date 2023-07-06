@@ -121,8 +121,8 @@ double MapInstance::BinaryOccupancyMap::distanceLookup(const MapInstance::Cell &
 
 void MapInstance::BinaryOccupancyMap::enqueue(const MapInstance::Cell &_cell, const double &_inflation_ratdius)
 {
-    if (not(seen_[_cell.idx_.x_][_cell.idx_.y_] and
-            not(distanceLookup(_cell) > _inflation_ratdius + 1e-8)))
+    if (not(seen_[_cell.idx_.x_][_cell.idx_.y_]) and
+        not(distanceLookup(_cell) > _inflation_ratdius  + std::sqrt(2) * property_.resolution_ + 1e-8))
     {
         seen_[_cell.idx_.x_][_cell.idx_.y_] = true;
 

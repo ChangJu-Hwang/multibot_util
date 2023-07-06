@@ -263,12 +263,12 @@ namespace MAPF_Util
             friend std::ostream &operator<<(std::ostream &_os, const SinglePath &_singlePath)
             {
                 _os.precision(4);
-                _os << "[" << _singlePath.agentName_ << "]"
+                _os << "[" << _singlePath.agentName_ << "] "
                     << "Cost: " << _singlePath.cost_ << "s" << std::endl;
 
                 for(const auto& nodePair : _singlePath.nodes_)
                 {
-                    _os << "["  << _singlePath.agentName_ << "]"
+                    _os << "["  << _singlePath.agentName_ << "] "
                         << "["  << nodePair.first.departure_time_.count() << "s"
                         << ", " << nodePair.second.arrival_time_.count()  << "s" << ")"
                         << ": " << nodePair.first.pose_ << " -> " << nodePair.second.pose_
