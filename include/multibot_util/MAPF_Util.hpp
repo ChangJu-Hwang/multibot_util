@@ -260,15 +260,24 @@ namespace MAPF_Util
             std::vector<std::pair<SinglePath::Node, SinglePath::Node>> nodes_;
             double cost_;
 
+            SinglePath &operator=(const SinglePath &_other)
+            {
+                agentName_  = _other.agentName_;
+                nodes_      = _other.nodes_;
+                cost_       = _other.cost_;
+
+                return *this;
+            }
+
             friend std::ostream &operator<<(std::ostream &_os, const SinglePath &_singlePath)
             {
                 _os.precision(4);
-                _os << "[" << _singlePath.agentName_ << "]"
+                _os << "[" << _singlePath.agentName_ << "] "
                     << "Cost: " << _singlePath.cost_ << "s" << std::endl;
 
                 for(const auto& nodePair : _singlePath.nodes_)
                 {
-                    _os << "["  << _singlePath.agentName_ << "]"
+                    _os << "["  << _singlePath.agentName_ << "] "
                         << "["  << nodePair.first.departure_time_.count() << "s"
                         << ", " << nodePair.second.arrival_time_.count()  << "s" << ")"
                         << ": " << nodePair.first.pose_ << " -> " << nodePair.second.pose_
@@ -279,6 +288,12 @@ namespace MAPF_Util
             }
 
             SinglePath() {}
+            SinglePath(const SinglePath &_other)
+            {
+                agentName_  = _other.agentName_;
+                nodes_      = _other.nodes_;
+                cost_       = _other.cost_;
+            }
         }; // struct SinglePath
 
         typedef std::map<std::string, SinglePath> PathSet;
