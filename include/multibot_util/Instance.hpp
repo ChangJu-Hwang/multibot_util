@@ -13,6 +13,7 @@ namespace Instance
         struct Agent
         {
             std::string name_;
+            std::string type_;
 
             double size_;
             double wheel_radius_;
