@@ -22,6 +22,9 @@ namespace Instance
             double max_linVel_, max_linAcc_;
             double max_angVel_, max_angAcc_;
 
+            double linVel_;
+            double angVel_;
+
             Position::Pose start_;
             Position::Pose goal_;
             Position::Pose pose_;
