@@ -13,6 +13,7 @@ namespace Instance
         struct Agent
         {
             std::string name_;
+            std::string type_;
 
             double size_;
             double wheel_radius_;
@@ -20,6 +21,9 @@ namespace Instance
 
             double max_linVel_, max_linAcc_;
             double max_angVel_, max_angAcc_;
+
+            double linVel_;
+            double angVel_;
 
             Position::Pose start_;
             Position::Pose goal_;
