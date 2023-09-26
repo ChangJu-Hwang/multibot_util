@@ -6,5 +6,5 @@ CXX_FLAGS = -g -fPIC   -Wall -Wextra -Wpedantic -std=gnu++2a
 
 CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -Dmultibot_util_EXPORTS
 
-CXX_INCLUDES = -I/home/changju/multibot_ws/src/multibot_util/include -isystem /opt/ros/foxy/include 
+CXX_INCLUDES = -I/home/changju/multibot_ws/src/multibot_util/include -isystem /home/changju/multibot_ws/install/multibot_ros2_interface/include -isystem /opt/ros/foxy/include 
 
