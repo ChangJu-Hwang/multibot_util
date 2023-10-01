@@ -2079,7 +2079,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so"
+			"value" : "/home/changju/multibot_ws/install/multibot_ros2_interface/lib/libmultibot_ros2_interface__rosidl_typesupport_fastrtps_cpp.so"
 		},
 		{
 			"name" : "action_msgs_DIR",
@@ -2682,6 +2682,18 @@
 			"value" : "/opt/ros/foxy/share/message_filters/cmake"
 		},
 		{
+			"name" : "multibot_ros2_interface_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for multibot_ros2_interface."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/changju/multibot_ws/install/multibot_ros2_interface/share/multibot_ros2_interface/cmake"
+		},
+		{
 			"name" : "multibot_util_BINARY_DIR",
 			"properties" : 
 			[
@@ -2703,7 +2715,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "general;geometry_msgs::geometry_msgs__rosidl_generator_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_cpp;general;geometry_msgs::geometry_msgs__rosidl_typesupport_cpp;"
+			"value" : "general;geometry_msgs::geometry_msgs__rosidl_generator_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_cpp;general;geometry_msgs::geometry_msgs__rosidl_typesupport_cpp;general;multibot_ros2_interface::multibot_ros2_interface__rosidl_generator_c;general;multibot_ros2_interface::multibot_ros2_interface__rosidl_typesupport_introspection_c;general;multibot_ros2_interface::multibot_ros2_interface__rosidl_typesupport_c;general;multibot_ros2_interface::multibot_ros2_interface__rosidl_typesupport_introspection_cpp;general;multibot_ros2_interface::multibot_ros2_interface__rosidl_typesupport_cpp;"
 		},
 		{
 			"name" : "multibot_util_SOURCE_DIR",

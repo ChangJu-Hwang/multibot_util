@@ -236,9 +236,9 @@ namespace MAPF_Util
         }; // struct TimeLine
     } // namespace Time
 
-    namespace Path
+    namespace Traj
     {
-        struct SinglePath
+        struct SingleTraj
         {
             struct Node
             {
@@ -257,10 +257,10 @@ namespace MAPF_Util
             }; // struct Node
 
             std::string agentName_;
-            std::vector<std::pair<SinglePath::Node, SinglePath::Node>> nodes_;
+            std::vector<std::pair<SingleTraj::Node, SingleTraj::Node>> nodes_;
             double cost_;
 
-            SinglePath &operator=(const SinglePath &_other)
+            SingleTraj &operator=(const SingleTraj &_other)
             {
                 agentName_  = _other.agentName_;
                 nodes_      = _other.nodes_;
@@ -269,7 +269,7 @@ namespace MAPF_Util
                 return *this;
             }
 
-            friend std::ostream &operator<<(std::ostream &_os, const SinglePath &_singlePath)
+            friend std::ostream &operator<<(std::ostream &_os, const SingleTraj &_singlePath)
             {
                 _os.precision(4);
                 _os << "[" << _singlePath.agentName_ << "] "
@@ -287,15 +287,15 @@ namespace MAPF_Util
                 return _os;                    
             }
 
-            SinglePath() {}
-            SinglePath(const SinglePath &_other)
+            SingleTraj() {}
+            SingleTraj(const SingleTraj &_other)
             {
                 agentName_  = _other.agentName_;
                 nodes_      = _other.nodes_;
                 cost_       = _other.cost_;
             }
-        }; // struct SinglePath
+        }; // struct SingleTraj
 
-        typedef std::map<std::string, SinglePath> PathSet;
-    } // namespace Path
+        typedef std::map<std::string, SingleTraj> TrajSet;
+    } // namespace Traj
 } // namespace MAPF_Util

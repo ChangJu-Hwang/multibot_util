@@ -18,6 +18,7 @@ endif()
 ################################################################################
 find_package(ament_cmake REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(multibot_ros2_interface REQUIRED)
 
 ################################################################################
 # Build
@@ -27,7 +28,8 @@ include_directories(
 )
 
 set(DEPENDENCIES
-    geometry_msgs
+    "geometry_msgs"
+    "multibot_ros2_interface"
 )
 
 set(LIBRARY_NAME "multibot_util")
